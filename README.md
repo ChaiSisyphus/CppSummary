@@ -9,3 +9,8 @@ vector<int> spiralOrder (vector<vector<int>>& matrix) {
 }  
 ```
 ***
+### string类型与int类型之间相互转化  
+```
+int out = stoi(string); 能够将string类型转换为int类型  
+string out = to_string(int); 能够将int类型转换为string类型  
+```
