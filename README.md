@@ -21,6 +21,7 @@ string out = to_string(int); 能够将int类型转换为string类型
 ### c++中对数组进行初始化  
 【1】如果以变量进行定义，则定义在栈中，数组的长度必须固定，因此只能使用常量对数组进行初始化  
 【2】想要动态定义数组的长度，则需要将数组定义在堆中，使用new关键字创建数组  
+【3】建议直接使用vector容器进行定义  
 ``` 
 int *test = new int[len];
 delete test;
