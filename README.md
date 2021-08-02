@@ -44,7 +44,8 @@ delete[] array;
 指针(java中返回一个引用). 同时也可以拿类创建变量, 如:string s; s就是string类型的变量, string *s = new string();
 当定义为变量时, 直接操作数据本身, 比如vector<string>, 泛型定义的就是string变量类型, 加入容器中的就是string变量, 就不再需要
 考虑, 变量相互影响的问题  
-### c++返回地址问题```
+### c++返回地址问题
+```
 	vector<TreeNode> v1 = getPath(root, *p);
 	TreeNode *result = new TreeNode(v1[p1 - 1]);
 	return result;
