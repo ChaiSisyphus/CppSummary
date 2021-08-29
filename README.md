@@ -63,5 +63,9 @@ delete[] array;
 [3] static修改的成员变量只能在类外通过 int Class::a = 1;的形式进行初始化;  
 [4] const修改的成员变量必须显式的进行初始化;  
 [5] static const 修改的int类型可以直接在类内初始化;  
-	
-	
+### final override const volatile register mutable等做标识符  
+[1] 类似java的注释效果, final表示该函数不能再被重写, override表示函数为重写函数, const表示该函数不能修改类中其他的成员变脸
+. 如果出现这些情况, 编译器就会报错.  
+[2] const函数可以修改被mutable修饰的成员变量  
+[3] volatile关键字表示停止编译器对执行的优化禁止指令重排, 并且直接从内存中读取变量的值, 直接绕过缓存和寄存器  
+[4] register则让编译器尽可以的把变量的值存入寄存器中, 从而提高数据的读取效率  
