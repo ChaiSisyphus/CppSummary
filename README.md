@@ -73,3 +73,6 @@ delete[] array;
 ### unordered_map适用方法
 [1] 利用find()函数, 查看返回值是否为map.end()的迭代器数值, 如果不能根据键找到值就会返回迭代器的end()值;  
 [2] 利用count()函数, 计算key值出现的次数, 结果只能为1或者0, 一次来判断map中是否存在该key值;  
+### cin与cout的用法
+	[1] cin 和 cout为istream和ostream的对象, 如果操作成功则返回cin和cout的地址, 如果操作失败则返回0;  
+	[2]cin有get();方法, 可以获取当前读取的值, 使用cin.get() == '\0'用来判断, 是否读到了行的末尾;  
