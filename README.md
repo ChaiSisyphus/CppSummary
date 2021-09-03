@@ -78,3 +78,5 @@ delete[] array;
 	[2] cin 和 cout为istream和ostream的对象, 如果操作成功则返回cin和cout的地址, 如果操作失败则返回0;  
 	[3]cin有get();方法, 可以获取当前读取的值, 使用cin.get() == '\0'用来判断, 是否读到了行的末尾;cin.get()方法不会丢弃掉换行符;
 	[4]cin.getline();方法, 可以一次性读取一行数据, 将数据以char的形式放入容器中;  
+### vector容器的begin, end front, back  
+	[1] begin()和end()方法, 返回容器起始和终止位置的指针;front()和back()函数返回容器起始和终止位置的数据;  
