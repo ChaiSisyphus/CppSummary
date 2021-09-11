@@ -87,3 +87,5 @@ delete[] array;
 	[1] vector初始化: vector<vector<int>> array(3, vecotr<int>(3, 1)); 第一个初始化为3*3, 元素为1的容器;  
 	[2] 不可以访问对vector没有赋值的索引进行访问;  
 ### 注意if(a = 1){}; 这样的语句也是可以运行的, 只是将a赋值为1, 然后判断a的值是否为0, 与if(a == 1){}; 相差深远, 所以一定要仔细仔细;  
+### memset使用注意
+	[1] memset以字节为单位进行内存覆盖, 如果定义的是int数组, 则计算覆盖长度为sizeof(int) * size;
