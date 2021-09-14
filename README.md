@@ -91,3 +91,9 @@ delete[] array;
 	[1] memset以字节为单位进行内存覆盖, 如果定义的是int数组, 则计算覆盖长度为sizeof(int) * size;
 ### vector存储的位置 
 	[1] vector创建的对象是在栈上存储的, 但是vector内存存储的数据确实在堆上存储的;  
+### 二分法总结
+	[1] 最好利用左右指针重合这一条件来进行查找, 因为整个排列数组可能不是满足整体有序的, 并且这样也能避免对边界条件的判断;  
+	[2] while(left < right) 作循环结束条件;
+	[3] mid=(left+right)/2; 若left/right都不加减一, 则left/right最终会相邻; 若mid=(left+right)/2, left=mid, right=mid-1;则左右指针重合在左指针处;
+			       若mid=(left+right+1)/2, left=mid+1, right=mid;则左右指针重合在右指针处;
+	[4] 加减1的指针不能使用>=/<=的符号, 等于的条件放在不负责移动的一方就好; 
