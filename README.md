@@ -96,4 +96,4 @@ delete[] array;
 	[2] while(left < right) 作循环结束条件;
 	[3] mid=(left+right)/2; 若left/right都不加减一, 则left/right最终会相邻; 若mid=(left+right)/2, left=mid, right=mid-1;则左右指针重合在左指针处;
 			       若mid=(left+right+1)/2, left=mid+1, right=mid;则左右指针重合在右指针处;
-	[4] 加减1的指针不能使用>=/<=的符号, 等于的条件放在不负责移动的一方就好; 
+	[4] 与target相等时不能加减1, 要保证left/right始终与target重合; 
