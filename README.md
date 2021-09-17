@@ -97,3 +97,6 @@ delete[] array;
 	[3] mid=(left+right)/2; 若left/right都不加减一, 则left/right最终会相邻; 若mid=(left+right)/2, left=mid, right=mid-1;则左右指针重合在左指针处;
 			       若mid=(left+right+1)/2, left=mid+1, right=mid;则左右指针重合在右指针处;
 	[4] 与target相等时不能加减1, 要保证left/right始终与target重合; 
+### 有符号数与无符号数之间转换  
+	[1] 负数是以补码的形式存储的, 补码: 将整数取反之后加1; 补码转换会整数: 减1后取反; 如果无符号数转为了有符号数, 最高位符号位出现了负数, 则计算其真是数字的顺序:
+			       除最高位代表负号外, 将其余位减1, 然后取反;  
