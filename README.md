@@ -102,3 +102,11 @@ delete[] array;
 			       除最高位代表负号外, 将其余位减1, 然后取反;  
 ### 指针
 ![image](https://user-images.githubusercontent.com/60838780/134754167-505aefbe-9646-4270-a7be-de302db1ef56.png)
+### 记录一下求两个整数的算法
+			       int gcd(int a, int b){
+	if(a % b == 0){
+		return b;
+	} else{
+		return gcd(b, a % b);
+	}
+}
