@@ -112,3 +112,21 @@ int gcd(int a, int b){
 	}
 }
 ```
+### 字符 字符串 字符数组 字符串指针 指针数组
+[1] char *ps = "language"; ps代表字符串起始地址, 因此 ps = "antoher";也是正确的; 在c语言中将字符串转化为字符串处理, 使用*(ps+3), 也可以使用ps[3]访问字符元素;
+[2] char ps[] = "language"; ps为字符数组, 这种形式只能在声明和初始化同时存在时才正确 分开写就只能写成这样的形式:char ps[20]; ps = {'h','e','l','l','o'};
+[3] char* = string; char** = string* (字符串指针); char * = char [];
+[4] 指针数组, 指的是数组中每次元素都是指针, 比如说二维数组array就是指针数组, 或者字符串数组char *str[] = {"hello", "world"}; str也是二维数组;
+```
+//c语言动态分配二维数组
+int **array = malloc(m * sizeof(int*));
+for(int i = 0; i < m; i++){
+	array[i] = malloc(sizeof(struct));
+}
+//c语言申请一个3行2列的整型数组
+int (*a)[2] = ((int*)[2])(sizeof(int) * 2 * 3);
+```
+	
+			       
+			       
+			     
